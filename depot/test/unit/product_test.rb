@@ -59,6 +59,7 @@ class ProductTest < ActiveSupport::TestCase
     assert !product.save
     assert_equal I18n.translate('activerecord.errors.messages.taken'), product.errors[:title].join('; ')
   end
+=begin
   test "title" do
     product = Product.new(title: "short", 
                          description: "desc",
@@ -67,5 +68,6 @@ class ProductTest < ActiveSupport::TestCase
     assert product.invalid?
     puts product.errors[:title].join("; ")
   end
+=end
 
 end

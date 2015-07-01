@@ -65,6 +65,7 @@ class ProductTest < ActiveSupport::TestCase
                          price: 1,
                          image_url: "hoge.gif")
     assert product.invalid?
+    puts product.errors[:title].join("; ")
   end
 
 end
