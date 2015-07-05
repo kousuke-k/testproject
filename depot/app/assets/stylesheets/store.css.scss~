@@ -4,7 +4,7 @@
 
 .store {
   h1 {
-    margin: 0,
+    margin: 0;
     font: 150% sans-serif;
     color: #226;
     border-bottom: 3px dotted #77d;
