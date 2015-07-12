@@ -9,13 +9,16 @@
 <body class='<%= controller.controller_name %>'>
 
   <div id="banner">
-    <%= image_tab("logo.png") %>
+    <%= image_tag("logo.png") %>
     <%= @page_title || "Pragmatic Bookshelf" %>
   </div>
   <div id="columns">
     <div id="side">
+      <div id="cart">
+        <%= @cart %>
+      </div>
       <ul>
-        <li><a href="http://www...">ホーム</a></li>
+        <li><a href="http://localhost:3000/">ホーム</a></li>
         <li><a href="http://www...">よくある質問</a></li>
         <li><a href="http://www...">ニュース</a></li>
         <li><a href="http://www...">お問い合わせ</a></li>
